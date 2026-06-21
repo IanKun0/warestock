@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "WareStock",
+    "slug": "warestock-mrntech",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0F172A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.mrntech.warestock",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ],
+      "allowBackup": true
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "WareStock needs camera access to scan QR codes and take photos of inventory items."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "warestock-mrntech"
+      }
+    }
+  }
+}
